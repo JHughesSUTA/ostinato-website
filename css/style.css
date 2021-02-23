@@ -113,6 +113,21 @@ img {
 .showcase-form input:focus {
     outline: none;
 }
+
+.showcase::before,.showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: #fff;
+    transform: SkewY(-3deg);
+    -webkit-transform: SkewY(-3deg); /* for safari */
+    -moz-transform: SkewY(-3deg);
+    -ms-transform: SkewY(-3deg);
+}
+
 /* ===================================== UTILITIES ===================================== */
 .container {
     max-width: 1100px;
